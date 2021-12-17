@@ -1,16 +1,6 @@
 <?php
 
-// Conexión con base de datos
-$conn = new mysqli(
-  'localhost',
-  'root',
-  'elsapito20',
-  'mc_enchants'
-);
-if ($conn->connect_errno > 0) {
-  die("Error de conexión {$conn->connect_error}");
-}
-$conn->set_charset('utf8');
+require('conn.php');
 
 ?>
 

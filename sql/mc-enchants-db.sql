@@ -83,6 +83,19 @@ INSERT INTO enchant (id, name, short_text, full_text, enchant_type_id, rarity, m
   ),
 
   (
+    3,
+    'lava walker',
+    'Permite caminar por la lava dejando bloques de magma en el camino.',
+    'Consume durabilidad. Genera magma en un radio de 1-3 bloques.',
+    2,
+    20,
+    2,
+    2,
+    false,
+    'lava walker.png'
+  ),
+
+  (
     101,
     'fire aspect',
     'Aplica fuego al objetivo.',
