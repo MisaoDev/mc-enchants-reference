@@ -1,0 +1,340 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encantamientos</title>
+
+  <!-- Bulma CSS Framework -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="pb-6">
+
+  <header class="hero is-primary">
+    <div class="hero-body has-text-centered">
+      <h1 class="title">Guía de Encantamientos</h1>
+      <p class="subtitle">Vanilla + Enchants Squared plugin</p>
+    </div>
+  </header>
+
+  <div class="container is-max-desktop mt-5">
+
+    <div id="filter-container" class="filter-container mb-5">
+      
+        <button class="button filter-button is-hoverable " onclick="filterSelection('filter-sword')">
+          <img src="img/item/sword.webp" alt="" class="filter-icon">
+        </button>
+
+      
+        <button class="button filter-button is-hoverable " onclick="filterSelection('filter-bow')">
+          <img src="img/item/bow.webp" alt="" class="filter-icon">
+        </button>
+
+      
+        <button class="button filter-button is-hoverable " onclick="filterSelection('filter-crossbow')">
+          <img src="img/item/crossbow.webp" alt="" class="filter-icon">
+        </button>
+
+      
+        <button class="button filter-button is-hoverable " onclick="filterSelection('filter-trident')">
+          <img src="img/item/trident.webp" alt="" class="filter-icon">
+        </button>
+
+      
+        <button class="button filter-button is-hoverable " onclick="filterSelection('filter-helmet')">
+          <img src="img/item/helmet.webp" alt="" class="filter-icon">
+        </button>
+
+      
+        <button class="button filter-button is-hoverable " onclick="filterSelection('filter-chestplate')">
+          <img src="img/item/chestplate.webp" alt="" class="filter-icon">
+        </button>
+
+      
+        <button class="button filter-button is-hoverable " onclick="filterSelection('filter-leggings')">
+          <img src="img/item/leggings.webp" alt="" class="filter-icon">
+        </button>
+
+      
+        <button class="button filter-button is-hoverable " onclick="filterSelection('filter-boots')">
+          <img src="img/item/boots.webp" alt="" class="filter-icon">
+        </button>
+
+      
+        <button class="button filter-button is-hoverable " onclick="filterSelection('filter-shears')">
+          <img src="img/item/shears.webp" alt="" class="filter-icon">
+        </button>
+
+      
+        <button class="button filter-button is-hoverable " onclick="filterSelection('filter-flintandsteel')">
+          <img src="img/item/flintandsteel.webp" alt="" class="filter-icon">
+        </button>
+
+      
+        <button class="button filter-button is-hoverable " onclick="filterSelection('filter-fishingrod')">
+          <img src="img/item/fishingrod.webp" alt="" class="filter-icon">
+        </button>
+
+      
+        <button class="button filter-button is-hoverable " onclick="filterSelection('filter-elytra')">
+          <img src="img/item/elytra.webp" alt="" class="filter-icon">
+        </button>
+
+      
+        <button class="button filter-button is-hoverable " onclick="filterSelection('filter-pickaxe')">
+          <img src="img/item/pickaxe.webp" alt="" class="filter-icon">
+        </button>
+
+      
+        <button class="button filter-button is-hoverable " onclick="filterSelection('filter-axe')">
+          <img src="img/item/axe.webp" alt="" class="filter-icon">
+        </button>
+
+      
+        <button class="button filter-button is-hoverable " onclick="filterSelection('filter-shovel')">
+          <img src="img/item/shovel.webp" alt="" class="filter-icon">
+        </button>
+
+      
+        <button class="button filter-button is-hoverable " onclick="filterSelection('filter-hoe')">
+          <img src="img/item/hoe.webp" alt="" class="filter-icon">
+        </button>
+
+      
+        <button class="button filter-button is-hoverable " onclick="filterSelection('filter-shield')">
+          <img src="img/item/shield.webp" alt="" class="filter-icon">
+        </button>
+
+      
+        <button class="button filter-button is-hoverable active-filter" onclick="filterSelection('filter-book')">
+          <img src="img/item/book.webp" alt="" class="filter-icon">
+        </button>
+
+          </div>
+
+    
+      <div class="box has-background-white-bis p-2 filterDiv filter-pickaxe filter-axe filter-shovel filter-hoe filter-book">
+
+        <div class="enchant-box is-flex is-justify-content-space-between">
+          <div class="left-section">
+            <div class="is-flex is-align-items-center mb-2">
+              <img src="img/excavation.png" alt="" class="item-icon">
+              <h2 class="is-size-4 has-text-weight-semibold">
+                Excavation              </h2>
+              <div class="box p-2 ml-auto plugin-enchant">
+                Enchants²              </div>
+            </div>
+            <p>Pica un área de 3x3x1 en lugar de 1x1x1, pero pica un poco más lento.</p>
+            <p>Agáchate mientras picas para picar normalmente.</p>
+          </div>
+          <div class="right-section box p-2">
+            <table class="table is-striped is-narrow is-fullwidth is-size-7">
+              <tbody>
+                <tr>
+                  <td>Rareza</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>Nivel Max</td>
+                  <td>---</td>
+                </tr>
+                <tr>
+                  <td>Nivel Max Mesa</td>
+                  <td>---</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="lower-section mt-3 is-flex is-align-items-center">
+          <span class="is-size-7 ml-5 mr-4 has-text-grey-light">Sirve para:</span>
+          <div class="compatible-list">
+            
+              <img src="img/item/pickaxe.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/axe.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/shovel.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/hoe.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/book.webp" alt="" class="compatible-icon">
+
+            
+          </div>
+        </div>
+
+      </div>
+
+    
+      <div class="box has-background-white-bis p-2 filterDiv filter-sword filter-bow filter-crossbow filter-trident filter-helmet filter-chestplate filter-leggings filter-boots filter-shears filter-flintandsteel filter-fishingrod filter-elytra filter-pickaxe filter-axe filter-shovel filter-hoe filter-shield filter-book">
+
+        <div class="enchant-box is-flex is-justify-content-space-between">
+          <div class="left-section">
+            <div class="is-flex is-align-items-center mb-2">
+              <img src="img/rejuvenation.png" alt="" class="item-icon">
+              <h2 class="is-size-4 has-text-weight-semibold">
+                Rejuvenation              </h2>
+              <div class="box p-2 ml-auto plugin-enchant">
+                Enchants²              </div>
+            </div>
+            <p>Regenera la durabilidad lentamente al moverse.</p>
+            <p>Al nivel III hay un 30% de regenerar 1 punto de durabilidad por movimiento.</p>
+          </div>
+          <div class="right-section box p-2">
+            <table class="table is-striped is-narrow is-fullwidth is-size-7">
+              <tbody>
+                <tr>
+                  <td>Rareza</td>
+                  <td>80</td>
+                </tr>
+                <tr>
+                  <td>Nivel Max</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Nivel Max Mesa</td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="lower-section mt-3 is-flex is-align-items-center">
+          <span class="is-size-7 ml-5 mr-4 has-text-grey-light">Sirve para:</span>
+          <div class="compatible-list">
+            
+              <img src="img/item/sword.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/bow.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/crossbow.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/trident.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/helmet.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/chestplate.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/leggings.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/boots.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/shears.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/flintandsteel.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/fishingrod.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/elytra.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/pickaxe.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/axe.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/shovel.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/hoe.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/shield.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/book.webp" alt="" class="compatible-icon">
+
+            
+          </div>
+        </div>
+
+      </div>
+
+    
+      <div class="box has-background-white-bis p-2 filterDiv filter-sword filter-book">
+
+        <div class="enchant-box is-flex is-justify-content-space-between">
+          <div class="left-section">
+            <div class="is-flex is-align-items-center mb-2">
+              <img src="img/fire-aspect.webp" alt="" class="item-icon">
+              <h2 class="is-size-4 has-text-weight-semibold">
+                Fire aspect              </h2>
+              <div class="box p-2 ml-auto vanilla-enchant">
+                Vanilla              </div>
+            </div>
+            <p>Aplica fuego al objetivo.</p>
+            <p>El fuego dura 4 segundos por cada nivel</p>
+          </div>
+          <div class="right-section box p-2">
+            <table class="table is-striped is-narrow is-fullwidth is-size-7">
+              <tbody>
+                <tr>
+                  <td>Rareza</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Nivel Max</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Nivel Max Mesa</td>
+                  <td>2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="lower-section mt-3 is-flex is-align-items-center">
+          <span class="is-size-7 ml-5 mr-4 has-text-grey-light">Sirve para:</span>
+          <div class="compatible-list">
+            
+              <img src="img/item/sword.webp" alt="" class="compatible-icon">
+
+            
+              <img src="img/item/book.webp" alt="" class="compatible-icon">
+
+            
+          </div>
+        </div>
+
+      </div>
+
+    
+  </div>
+
+  <!-- Filter buttons -->
+  <script src="js/filter.js"></script>  
+
+</body>
+
+</html>

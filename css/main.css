@@ -1,0 +1,78 @@
+@media screen and (max-width: 1023px) {
+  .container.is-max-desktop {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
+
+.filter-container {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+@media screen and (min-width: 920px) {
+  .filter-container {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.filter-icon {
+  height: 28px;
+}
+
+.active-filter {
+  background-color: turquoise;
+}
+
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.enchant-box {
+  gap: 10px;
+}
+
+.left-section {
+  width: 100%;
+}
+
+.item-icon {
+  height: 32px;
+  padding: 4px;
+  border: 2px solid lightseagreen;
+  border-radius: 6px;
+  box-sizing: content-box;
+  margin-right: 12px;
+}
+
+.plugin-enchant {
+  background-color: turquoise;
+}
+
+.vanilla-enchant {
+  background-color: yellowgreen;
+}
+
+.compatible-list {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.compatible-icon {
+  height: 24px;
+  background-color: paleturquoise;
+  box-sizing: content-box;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+.right-section {
+  width: 200px;
+}
