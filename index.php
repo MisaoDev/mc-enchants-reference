@@ -47,11 +47,16 @@ require('conn.php');
         $itemName = $row['name'];
       ?>
 
-        <button class="button filter-button is-hoverable <?php echo $itemName == 'book' ? 'active-filter' : '' ?>" onclick="filterSelection('filter-<?php echo $itemName; ?>')">
+        <button class="button filter-button is-hoverable" onclick="filterSelection('filter-<?php echo $itemName; ?>')">
           <img src="img/item/<?php echo $itemName; ?>.webp" alt="" class="filter-icon">
         </button>
 
       <?php } ?>
+
+      <button class="button filter-button is-hoverable active-filter" onclick="filterSelection('all')">
+        <img src="img/item/book.webp" alt="" class="filter-icon">
+      </button>
+
     </div>
 
     <?php
@@ -172,7 +177,7 @@ require('conn.php');
   </div>
 
   <!-- Filter buttons -->
-  <script src="js/filter.js"></script>  
+  <script src="js/filter.js"></script>
 
 </body>
 
